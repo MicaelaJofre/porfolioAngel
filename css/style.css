@@ -12050,7 +12050,7 @@ strong {
 
 .slider-text {
   position: relative;
-  height: 780px;
+  height: 10px;
 }
 
 .slider-text .text {
@@ -12073,7 +12073,6 @@ strong {
 }
 
 .slider-text h1 {
-  padding: 3em 0 .3em 0;
   font-size: 62px;
   font-family: "Noto Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -12900,7 +12899,7 @@ textarea.form-control {
   width: 50px;
   display: block;
   float: left;
-  background: rgba(151, 249, 249, .3);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   position: relative;
 }
