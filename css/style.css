@@ -12058,10 +12058,14 @@ strong {
 }
 
 .slider-text .text p {
-  background-color: rgba(0, 0, 0, 0.4);
+  font-size: .9em;
+  line-height: 250%;
   border-radius: .25em;
-  padding: 2em ;
+  padding: .5em ;
   color: rgba(255, 255, 255, 0.9);
+}
+.subtitle {
+  font-size: 1.2em;
 }
 
 .slider-text .subheading {
@@ -12398,6 +12402,9 @@ strong {
     -o-transition: none;
     transition: none;
   }
+}
+.text-bold{
+  font-weight: bolder;
 }
 
 .services .icon {
