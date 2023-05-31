@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -69,8 +69,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
-  background-color: #fff;
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus {
@@ -11726,7 +11725,6 @@ body {
   color: #9da1a5;
   background-size: cover;
   background-repeat: no-repeat;
-  background: #0a0a0a;
 }
 
 body.menu-show {
@@ -12293,22 +12291,48 @@ strong {
   margin-bottom: 2em;
 }
 
-.icon-video {
+.icon-video, .icon-carousel-video, .icon-carousel-img {
   width: 80px;
   height: 80px;
   background: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 10;
   margin: 0 auto;
   border-radius: 50%;
+}
+.icon-carousel-img{
+  width: 110% !important;
+  height: 110%  !important;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 100%;
 }
 
 .icon-video span {
   font-size: 30px;
   color: #fff;
 }
+
+/**carousel**/
+.img-car{
+  width: 20em;
+  height: 20em;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: none;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .img-car{
+    width: 100%;
+    height: 35em;
+  }
+}
+
+/****/
 
 .progress-circle h2 {
   font-size: 16px;
@@ -12395,6 +12419,7 @@ strong {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .services {
@@ -12557,8 +12582,17 @@ strong {
 
 .track {
   padding-top: 120px;
-  padding-bottom: 40px;
+  padding-bottom: 120px;
   overflow: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.videoTrack {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .track .section-title {
@@ -12658,9 +12692,6 @@ strong {
 
 
 
-
-
-
 .form-control {
   height: 52px !important;
   background: transparent !important;
@@ -12729,6 +12760,18 @@ textarea.form-control {
 
 .ftco-section {
   padding: 7em 0;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.videoServices {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .ftco-no-pt {
