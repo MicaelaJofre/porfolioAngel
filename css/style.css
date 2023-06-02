@@ -11785,8 +11785,7 @@ strong {
 
 @media (max-width: 767.98px) {
   .navbar {
-    right: 20px;
-    width: 200px;
+    display: none;
   }
 }
 
