@@ -12581,8 +12581,8 @@ strong {
 
 
 .track {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   overflow: hidden;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
@@ -12592,7 +12592,9 @@ strong {
   left: 0;
   top: 0;
   right: 0;
+  bottom: 0;
   z-index: -1;
+  object-fit: none;
 }
 
 .track .section-title {
@@ -12759,9 +12761,10 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 2em 0;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
 }
 
 .videoServices {
@@ -13475,6 +13478,7 @@ textarea.form-control {
 
 .contact-section {
   width: 100%;
+  padding: 7em 0;
 }
 
 .contact-section .box {
